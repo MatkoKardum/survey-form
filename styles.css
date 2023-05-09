@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px 50px;
+  background-color: #191923;
+  color: #fafafa;
+  font-family: Verdana, sans-serif;
+}
+
+#survey-form {
+  background-color: #3b3b53;
+  border-radius: 5px;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+#title,
+#description {
+  margin: 0;
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+p {
+  margin: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"],
+select,
+textarea {
+  width: 100%;
+  padding: 0 0 0 10px;
+  margin: 5px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"],
+select {
+  height: 2rem;
+}
+
+input:focus {
+  outline: 1px solid #0e79b2;
+}
+
+input[type="radio"]:focus {
+  outline: none;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  padding-top: 10px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #191923;
+  color: #fafafa;
+  transition: 1s all;
+}

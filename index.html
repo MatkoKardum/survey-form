@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta chaset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Mechatronical Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Name<input
+            id="name"
+            placeholder="Enter your name"
+            type="text"
+            required
+        /></label>
+        <label id="email-label"
+          >Email<input
+            id="email"
+            type="email"
+            placeholder="Enter your Email"
+            required
+        /></label>
+        <label id="number-label"
+          >Age (optional)<input
+            id="number"
+            type="number"
+            min="18"
+            max="120"
+            placeholder="Age"
+        /></label>
+
+        <label>
+          Which option best describes your current role?
+          <select id="dropdown">
+            <option disabled selected>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Would you recommend Mechatronical to a friend?</p>
+        <label
+          ><input type="radio" / value="definetly"
+          name="option">Definitely</label
+        >
+        <label><input type="radio" value="maybe" name="option" />Maybe</label>
+        <label
+          ><input type="radio" value="unsure" name="option" />Not sure</label
+        >
+      </fieldset>
+      <fieldset>
+        <p>What would you like to see more of?</p>
+        <label><input type="checkbox" value="arduino" />Arduino</label>
+        <label><input type="checkbox" value="flowcode" />Flowcode</label>
+        <label><input type="checkbox" value="protues" />Proteus</label>
+        <label><input type="checkbox" value="solidworks" />SolidWorks</label>
+        <label><input type="checkbox" value="fluidsim" />FluidSim</label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Any comments or suggestions?
+          <textarea
+            rows="5"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
